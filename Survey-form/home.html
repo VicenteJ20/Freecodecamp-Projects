@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Survey form</title>
+</head>
+<body>
+    <header id="header">
+        <h1 id="title">Vicente Jorquera</h1>
+        <p id="description">Gracias por tomarse el tiempo de resolver esta breve encuesta.</p>
+    </header>
+    <form action="#" id="survey-form">
+        <div class="form_div">
+            <label for="name" id="name-label">Nombres:</label>
+            <input type="text" name="name" id="name" placeholder="Ingrese su nombre aquí..." required>
+        </div>
+        <div class="form_div">
+            <label for="lastname" id="lastname-label">Apellidos:</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Ingrese su apellido aquí..." required>
+        </div>
+        <div class="form_div">
+            <label for="number" id="number-label" required>Edad:</label>
+            <input type="number" name="number" id="number" min="13" max="120" placeholder="Ingrese su edad aquí..." required>
+        </div>
+        <div class="form_div">
+            <label for="email" id="email-label">Correo electrónico</label>
+            <input type="email" name="email" id="email" placeholder="Ingrese su email, ejemplo: example@gmail.com" required>
+        </div>
+        <div class="form_div">
+            <h3 id="dropdown-label">¿Qué opción describe mejor su rol actual?</h3>
+            <select name="role" id="dropdown" class="form_control" required>
+                <option disabled selected value>Seleccione una opción a continuación</option>
+                <option value="student">Estudiante</option>
+                <option value="job">Trabajador</option>
+                <option value="learner">Estudiante de tiempo completo</option>
+                <option value="prefer-not-say">Prefiero no decirlo</option>
+                <option value="other">Otro</option>
+            </select>
+        </div>
+        <div class="form_div">
+            <h3 id="radio-label">¿Recomendaría el Desarrollo Web a un amigo/a?</h3>
+            <div class="options">
+                <label>
+                    <input type="radio" value="yes" name="user-recommend" class="input-radio">Sí, claro.
+                </label>
+                <label>
+                    <input type="radio" value="no" name="user-recommend" class="input-radio">No.
+                </label>
+                <label>
+                    <input type="radio" value="other" name="user-recommend" class="input-radio">Prefiero no decirlo.
+                </label>
+            </div>
+        </div>
+        <div class="form_div">
+            <h3 id="check-label">Seleccione los sistemas operativos que utiliza por favor.</h3>
+            <div class="options">
+                <label>
+                    <input type="checkbox" value="windows" name="user-recommend" class="input-checkbox">Windows
+                </label>
+                <label>
+                    <input type="checkbox" value="linux" name="user-recommend" class="input-checkbox">Linux
+                </label>
+                <label>
+                    <input type="checkbox" value="macOS" name="user-recommend" class="input-checkbox">macOS
+                </label>
+            </div>
+        </div>
+        <div class="form_div">
+            <h3 id="textarea-label">¿Tiene dudas o comentarios? <span class="span_optional">(opcional)</span></h3>
+            <textarea name="textarea" id="textarea" placeholder="Ingrese sus dudas o comentarios aquí..."></textarea>
+        </div>
+        <div class="form_div button_div">
+            <button type="submit" id="submit">Enviar</button>
+        </div>
+    </form>
+    <footer id="footer">Sitio web creado por <a href="https://www.github.com/VicenteJ20/" target="_blank" class="footer-link">Vicente Jorquera</a>. - 2022.</footer>
+</body> 
+</html>
